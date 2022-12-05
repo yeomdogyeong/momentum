@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+<script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }      
+        
+        body {
+            background-image: url("data:image/jpeg;base64,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");
+            background-position: center;
+           
+            background-size: cover;
+
+            color: black;
+        }
+
+        .time {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .greeting {
+            font-size:50px;
+        }
+
+        .todo{
+            font-size: 30px;
+        }
+
+        .author {
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .main {
+            width: 100vw;
+            height: 80vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quote {
+            width: 100vw;
+            height: 20vh;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="time" class="time"></div>
+        <div class="greeting">hello dogyeong</div>
+        <div class="todo">i can do everything!</div>
+    </div>
+    <div class="quote">
+      <div id="author" class="author"></div>
+      <div id="content" class="content"></div>
+    </div>
+
+</body>
+
+</html>
